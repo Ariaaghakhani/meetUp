@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    touch-action: pan-x pan-y;
+    user-select:none;
+}
+body{
+    background: rgb(12,10,9);
+}
+
+@font-face {
+    font-family: danaReg;
+    src: url("../fonts/Dana-Regular.ttf");
+}
+
+@font-face {
+    font-family: danaBold;
+    src: url("../fonts/Dana-Bold.ttf");
+}
+
+@font-face {
+    font-family: danaThin;
+    src: url("../fonts/Dana-Thin.ttf");
+}
+
+@font-face {
+    font-family: danaBlack;
+    src: url("../fonts/Dana-Black.ttf");
+}
+
+@font-face {
+    font-family: danaMed;
+    src: url("../fonts/Dana-Medium.ttf");
+}
+
+@font-face {
+    font-family: danaDemi;
+    src: url("../fonts/Dana-DemiBold.ttf");
+}
+
+@font-face {
+    font-family: danaExtra;
+    src: url("../fonts/Dana-ExtraBold.ttf");
+}
+
+
+.active-class{
+    border-bottom: 3px solid #10b981;
+}
