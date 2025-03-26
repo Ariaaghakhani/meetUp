@@ -19,13 +19,14 @@
       </div>
     </div>
   </div>
-  <Events/>
+<!--  <Events/>-->
+  <How/>
 </template>
 
 <script lang="ts">
 import {defineComponent} from 'vue'
 import Events from "~/components/Events.vue";
-
+import AnimateOnScroll from 'primevue/animateonscroll';
 
 export default defineComponent({
   components: {Events},

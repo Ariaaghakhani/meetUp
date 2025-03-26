@@ -2,6 +2,7 @@
 import Aura from '@primeuix/themes/Aura'
 import { definePreset } from '@primevue/themes'
 import {palette} from "@primeuix/styled";
+
 const prColor= palette('#4457ff')
 
 const MyPreset = definePreset(Aura,{
@@ -31,6 +32,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  // plugins:['~plugins/directives.ts'],
   devServer:{
     host:"0.0.0.0",
     port:4000,
@@ -38,8 +40,11 @@ export default defineNuxtConfig({
   app:{
     head:{
       title:'MeetUp',
+      htmlAttrs:{
+        dir:"rtl"
+      }
     },
-    pageTransition: { name: 'rotate',mode:'out-in'},
+    // pageTransition: { name: 'rotate',mode:'out-in'},
   },
   modules:['@vite-pwa/nuxt','@primevue/nuxt-module'],
   pwa: {

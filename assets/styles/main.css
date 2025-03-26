@@ -5,7 +5,7 @@
 html, body {
     touch-action: pan-x pan-y;
     user-select:none;
-    direction: rtl;
+
 }
 
 @font-face {
@@ -45,6 +45,7 @@ html, body {
 
 
 .active{
+    margin-top: 3px;
     border-bottom: 3px solid #4457ff !important;
 }
 .active-menu{
@@ -97,4 +98,11 @@ html, body {
 }
 .p-placeholder , .p-select-label{
     padding:0 calc((var(--p-form-field-padding-x) * 2) + var(--p-icon-size)) !important
+}
+
+.p-select-overlay {
+
+    .p-select-header{
+        border-bottom: 1px solid #e5e7eb;
+    }
 }

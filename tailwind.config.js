@@ -1,3 +1,5 @@
+import tailwindRtl from 'tailwindcss-rtl'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -20,7 +22,8 @@ export default {
         'platinum':"#DEE2E6",
         'anti-flash':"#E9ECEF",
         'salt':"#F8F9FA",
-        'prblue':"#4457ff"
+        'prblue':"#4457ff",
+
       },
       fontFamily:{
         danaReg:'danaReg',
@@ -36,6 +39,6 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [tailwindRtl],
 }
 
