@@ -1,12 +1,12 @@
 <template>
     <Header/>
-    <HomeView/>
+    <AboutView/>
     <Footer/>
 </template>
 
 <script lang="ts">
 useHead({
-  title: 'MeetUp | Home',
+  title: 'MeetUp | About',
   meta: [
     {
       name: 'description',
@@ -20,8 +20,9 @@ useHead({
 })
 import {defineComponent} from 'vue'
 
-
-export default defineComponent({})
+export default defineComponent({
+  name: "About"
+})
 </script>
 
 

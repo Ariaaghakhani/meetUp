@@ -5,9 +5,7 @@
 html, body {
     touch-action: pan-x pan-y;
     user-select:none;
-}
-body{
-    background: rgb(12,10,9);
+    direction: rtl;
 }
 
 @font-face {
@@ -46,6 +44,57 @@ body{
 }
 
 
-.active-class{
-    border-bottom: 3px solid #10b981;
+.active{
+    border-bottom: 3px solid #4457ff !important;
+}
+.active-menu{
+    color: #4457ff;
+}
+
+
+.page-enter-active,
+.page-leave-active {
+    transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+    opacity: 0;
+    filter: blur(1rem);
+}
+
+.p-select,.p-inputtext{
+    border:none !important;
+    box-shadow: none !important;
+}
+.p-select-option,.p-select-filter{
+    font-family: danaReg !important;
+}
+.p-select-clear-icon{
+    right: unset !important;
+    left:var(--p-select-dropdown-width) !important
+}
+.p-select-dropdown-icon,.p-inputicon{
+    color: #4457ff !important;
+}
+@media only screen and (min-width: 768px){
+    .input-search-box{
+        position: relative;
+        &::after{
+            content:'';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background: #4457ff;
+            right: 0;
+            bottom: -1rem;
+            transition: .3s ease-in-out;
+        }
+        &:hover::after{
+            transition: .3s ease-in-out;
+            width: 100%;
+        }
+    }
+}
+.p-placeholder , .p-select-label{
+    padding:0 calc((var(--p-form-field-padding-x) * 2) + var(--p-icon-size)) !important
 }
