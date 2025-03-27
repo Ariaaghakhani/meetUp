@@ -26,7 +26,6 @@
 
 <script lang="ts">
 import {defineComponent} from 'vue'
-import AnimateOnScroll from 'primevue/animateonscroll';
 
 export default defineComponent({
   data() {
