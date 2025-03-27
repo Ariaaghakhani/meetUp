@@ -31,7 +31,7 @@
       </h2>
     </div>
   </div>
-  <div class="flex lg:hidden flex flex-wrap md:container mx-auto p-8 *:flex *:w-full *:mt-8">
+  <div class="flex lg:hidden flex-wrap md:container mx-auto p-8 *:flex *:w-full *:mt-8">
     <div class="flex items-start h-fit">
       <img src="@/assets/images/how1.png" alt="" class="w-[150px] h-[150px] mb-8">
       <div class="flex flex-wrap ms-8">
