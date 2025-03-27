@@ -2,6 +2,9 @@
 <div class="w-full rounded-3xl bg-salt mt-40 py-40">
   <p class="text-center max-w-[500px] mx-auto text-prblue font-danaBold"> برگذار چطوری کار می‌کنه؟</p>
   <h2 class="text-center max-w-[500px] mx-auto text-4xl font-danaBold mt-4">خلق تجربه‌ی جذاب برای شما</h2>
+  <p class="text-center max-w-[500px] mx-auto text-space font-danaReg mt-4">
+    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+  </p>
   <div class="hidden lg:flex w-full p-8 *:w-1/3 *:p-4 *:flex *:justify-center *:content-start *:flex-wrap">
     <div>
       <img src="@/assets/images/how1.png" alt="" class="w-[150px] h-[150px] mb-8">
