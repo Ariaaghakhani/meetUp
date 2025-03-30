@@ -8,5 +8,11 @@ export default {
             method:'get',
             url:`${API_URL}/events`,
         })
+    },
+    getQuotes(){
+        return axios({
+            method:'get',
+            url:'https://dummyjson.com/quotes'
+        })
     }
 }

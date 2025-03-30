@@ -113,7 +113,7 @@
 
 <script lang="ts">
 import {defineComponent} from 'vue'
-import SERVER from '@/SERVER'
+import SERVER from '~/SERVER'
 import Skeleton from 'primevue/skeleton';
 
 

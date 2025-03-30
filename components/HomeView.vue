@@ -19,15 +19,18 @@
       </div>
     </div>
   </div>
-<!--  <Events/>-->
-<!--  <How/>-->
-<!--  <Why/>-->
+  <Events/>
+  <How/>
+  <Why/>
+  <Testimonial/>
 </template>
 
 <script lang="ts">
 import {defineComponent} from 'vue'
+import Testimonial from "~/components/Testimonial.vue";
 
 export default defineComponent({
+  components: {Testimonial},
   data() {
     return {}
   }
