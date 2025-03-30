@@ -58,12 +58,12 @@
     </div>
   </div>
   <div class="p-4 pt-0 md:p-8 md:pt-0 grid grid-cols-3 gap-8">
-    <div v-if="eventsLoading" class="card col-span-3 lg:col-span-1" v-for="n in 12" >
-      <Skeleton class="hidden lg:block" height="31.25rem" border-radius="1.5rem"/>
-      <Skeleton class="block lg:hidden" height="12.5rem" border-radius="1.5rem"/>
+    <div v-for="n in 12" v-if="eventsLoading" class="card col-span-3 lg:col-span-1">
+      <Skeleton border-radius="1.5rem" class="hidden lg:block" height="31.25rem"/>
+      <Skeleton border-radius="1.5rem" class="block lg:hidden" height="12.5rem"/>
     </div>
-    <NuxtLink :to="`/event/${item.id}`" v-else v-for="(item,index) in events" :key="index"
-         class="card col-span-3 lg:col-span-1 border rounded-3xl flex flex-wrap overflow-hidden group h-[200px] lg:h-[500px] relative">
+    <NuxtLink v-for="(item,index) in events" v-else :key="index" :to="`/event/${item.id}`"
+              class="card col-span-3 lg:col-span-1 border rounded-3xl flex flex-wrap overflow-hidden group h-[200px] lg:h-[500px] relative">
       <div class="absolute w-full top-0 right-0 p-4 flex z-50 font-danaReg">
         <div v-if="!item.type" class="rounded-full bg-white text-prblue px-4 py-2 flex items-center font-bold">
           <i class="pi pi-desktop me-2"></i>
@@ -74,7 +74,7 @@
           حضوری
         </div>
         <Button class="rounded-full px-4 py-2 flex items-center font-bold ms-2" severity="info">
-          {{item.category}}
+          {{ item.category }}
         </Button>
       </div>
       <div class="max-h-[200px] h-[200px] overflow-hidden w-1/2 lg:w-full">
@@ -91,12 +91,12 @@
           <span>
             <i class="pi pi-map-marker text-[1rem] text-prblue"></i>
           </span>
-            <span class="ms-2 text-space">{{item.location}}</span>
+            <span class="ms-2 text-space">{{ item.location }}</span>
           </div>
         </div>
         <div class="w-full p-4 flex-wrap">
-          <div class="w-full font-bold text-xl group-hover:text-prblue duration-300">{{item.title}}</div>
-          <div class="text-space mt-4">{{item.description}}</div>
+          <div class="w-full font-bold text-xl group-hover:text-prblue duration-300">{{ item.title }}</div>
+          <div class="text-space mt-4">{{ item.description }}</div>
         </div>
       </div>
     </NuxtLink>
@@ -110,12 +110,9 @@
       @page="onPageChange"
   />
 </template>
-
 <script lang="ts">
 import {defineComponent} from 'vue'
 import SERVER from '~/SERVER'
-import Skeleton from 'primevue/skeleton';
-
 
 
 export default defineComponent({
@@ -144,13 +141,13 @@ export default defineComponent({
         {name: 'حضوری', code: 'offline'},
         {name: 'آنلاین', code: 'online'},
       ],
-      eventsLoading:true,
+      eventsLoading: true,
       events: [],
       pageNumber: 1,
       chunkSize: 12,
       totalEvents: 0,
       first: 0,
-      loadedImages:0,
+      loadedImages: 0,
     }
   },
   beforeMount() {

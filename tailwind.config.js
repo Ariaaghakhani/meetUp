@@ -1,5 +1,5 @@
 import tailwindRtl from 'tailwindcss-rtl'
-
+import PrimeUi from 'tailwindcss-primeui'
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -39,6 +39,6 @@ export default {
       }
     },
   },
-  plugins: [tailwindRtl],
+  plugins: [tailwindRtl,PrimeUi],
 }
 
