@@ -1,5 +1,5 @@
 <template>
-<div class="w-full rounded-3xl bg-salt mt-40 py-40">
+<div class="w-full rounded-3xl bg-salt py-40">
   <p class="text-center max-w-[500px] mx-auto text-prblue font-danaBold"> برگذار چطوری کار می‌کنه؟</p>
   <h2 class="text-center max-w-[500px] mx-auto text-4xl font-danaBold mt-4">خلق تجربه‌ی جذاب برای شما</h2>
   <p class="text-center max-w-[500px] mx-auto text-space font-danaReg mt-4">
@@ -11,8 +11,8 @@
       <div class=" how-box">
         <span class="font-danaBold rounded-full bg-prblue flex justify-center items-center text-white w-[40px] h-[40px]">۰۱</span>
       </div>
-      <h2 class="font-danaBold text-3xl max-w-[300px] mx-auto mt-8 text-center">
-        ایونت‌های اطرافت رو بررسی و جستجو کن
+      <h2 class="font-danaBold text-2xl max-w-[300px] mx-auto mt-8 text-center">
+        رویدادهای مورد علاقه‌تان را بر اساس دسته‌بندی، موقعیت و تاریخ پیدا کنید.
       </h2>
     </div>
     <div>
@@ -20,8 +20,8 @@
       <div class="how-box">
         <span class="font-danaBold rounded-full bg-prblue flex justify-center items-center text-white w-[40px] h-[40px]">۰۲</span>
       </div>
-      <h2 class="font-danaBold text-3xl max-w-[300px] mx-auto mt-8 text-center">
-        ایونتی که به علایقت نزدیکه رو رزرو کن
+      <h2 class="font-danaBold text-2xl max-w-[300px] mx-auto mt-8 text-center">
+       به راحتی رزرو کنید، بلیط رویداد تهیه کنید یا ثبت نام کنید
       </h2>
     </div>
     <div>
@@ -29,8 +29,8 @@
       <div class="w-full flex justify-center">
         <span class="font-danaBold rounded-full bg-prblue flex justify-center items-center text-white w-[40px] h-[40px] z-10">۰۳</span>
       </div>
-      <h2 class="font-danaBold text-3xl max-w-[300px] mx-auto mt-8 text-center">
-        از تک تک لحظات انتخابت لذت ببر
+      <h2 class="font-danaBold text-2xl max-w-[300px] mx-auto mt-8 text-center">
+        در رویداد حاضر شوید، افراد جدیدی ملاقات کنید و تجربه‌های به‌یادماندنی بسازید!
       </h2>
     </div>
   </div>

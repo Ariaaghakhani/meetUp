@@ -12,7 +12,7 @@ export default {
     getQuotes(){
         return axios({
             method:'get',
-            url:'https://dummyjson.com/quotes'
+            url:`${API_URL}/quotes`
         })
     }
 }
