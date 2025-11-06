@@ -32,12 +32,6 @@ img {
     animation: none !important;
 }
 
-/* Allow header to have proper backdrop blur and sticky behavior */
-header {
-    position: sticky !important;
-    will-change: transform;
-}
-
 html.dark body {
     background-color: #0f172a;
     color: #e2e8f0;
