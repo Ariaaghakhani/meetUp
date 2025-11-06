@@ -81,8 +81,9 @@
         <img
             :alt="item.description"
             :src="item.image"
-            class="h-full object-cover w-full group-hover:scale-110 duration-300"
+            class="h-full object-cover w-full"
             loading="lazy"
+            decoding="async"
         >
       </div>
       <div class="w-1/2 lg:w-full">

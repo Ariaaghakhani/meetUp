@@ -14,10 +14,17 @@ html, body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Use GPU acceleration for transforms */
-img, video {
-    transform: translateZ(0);
-    will-change: transform;
+/* Image optimization for smooth scrolling */
+img {
+    content-visibility: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Disable expensive transforms and transitions */
+*, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
 }
 
 html.dark body {

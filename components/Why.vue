@@ -1,6 +1,6 @@
 <template>
   <div class="w-full flex py-40 px-4 flex-wrap md:flex-nowrap justify-center md:justify-between">
-    <img src="@/assets/images/why.png" class="w-full md:w-1/2 -scale-x-100 order-2 md:order-1 max-w-[600px] object-contain mb-8 md:mb-0" alt="">
+    <img src="@/assets/images/why.png" class="w-full md:w-1/2 -scale-x-100 order-2 md:order-1 max-w-[600px] object-contain mb-8 md:mb-0" alt="" loading="lazy" decoding="async">
     <div class="w-full md:w-1/2 ms-8 order-1 md:order-2">
       <p class="max-w-[500px] md:max-w-full text-center md:text-start mx-auto text-prblue font-danaBold">چرا برگذار؟</p>
       <h2 class="max-w-[500px] md:max-w-full text-center md:text-start mx-auto text-4xl font-danaBold dark:text-white mt-4">
