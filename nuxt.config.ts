@@ -39,7 +39,8 @@ export default defineNuxtConfig({
         dir:"rtl"
       }
     },
-    // pageTransition: { name: 'rotate',mode:'out-in'},
+    pageTransition: false,
+    layoutTransition: false
   },
   modules:['@vite-pwa/nuxt','@primevue/nuxt-module'],
   pwa: {
