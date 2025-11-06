@@ -87,8 +87,7 @@ export default defineComponent({
 
 <style>
 .header-sticky {
-  position: -webkit-sticky !important;
-  position: sticky !important;
+  position: fixed !important;
   top: 0 !important;
   left: 0 !important;
   right: 0 !important;
