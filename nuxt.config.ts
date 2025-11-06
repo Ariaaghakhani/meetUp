@@ -32,10 +32,6 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  devServer:{
-    host:"0.0.0.0",
-    port:4000,
-  },
   app:{
     head:{
       title:'MeetUp',

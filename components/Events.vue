@@ -65,11 +65,11 @@
     <NuxtLink v-for="(item,index) in events" v-else :key="index" :to="`/event/${item.id}`"
               class="card col-span-3 lg:col-span-1 border dark:border-gray-700 dark:bg-gray-800 rounded-3xl flex flex-wrap overflow-hidden group h-[200px] lg:h-[500px] relative">
       <div class="absolute w-full top-0 right-0 p-4 flex z-50 font-danaReg">
-        <div v-if="!item.type" class="rounded-full bg-white text-prblue px-4 py-2 flex items-center font-bold">
+        <div v-if="!item.type" class="rounded-full bg-white dark:bg-gray-700 text-prblue dark:text-french px-4 py-2 flex items-center font-bold">
           <i class="pi pi-desktop me-2"></i>
           آنلاین
         </div>
-        <div v-else class="rounded-full bg-white text-prblue px-4 py-2 flex items-center font-bold">
+        <div v-else class="rounded-full bg-white dark:bg-gray-700 text-prblue dark:text-french px-4 py-2 flex items-center font-bold">
           <i class="pi pi-user me-2"></i>
           حضوری
         </div>
@@ -95,7 +95,7 @@
           </div>
         </div>
         <div class="w-full p-4 flex-wrap">
-          <div class="w-full font-bold text-xl group-hover:text-prblue duration-300 dark:text-white">{{ item.title }}</div>
+          <div class="w-full font-bold text-xl group-hover:text-prblue duration-300 dark:text-french">{{ item.title }}</div>
           <div class="text-space dark:text-gray-400 mt-4">{{ item.description }}</div>
         </div>
       </div>
