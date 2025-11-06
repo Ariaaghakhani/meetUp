@@ -21,10 +21,16 @@ img {
     height: auto;
 }
 
-/* Disable expensive transforms and transitions */
-*, *::before, *::after {
+/* Disable expensive transforms and transitions (except header) */
+*:not(header):not(header *), *:not(header)::before, *:not(header)::after {
     transition: none !important;
     animation: none !important;
+}
+
+/* Allow header to have proper backdrop blur and sticky behavior */
+header {
+    position: sticky !important;
+    will-change: transform;
 }
 
 html.dark body {
