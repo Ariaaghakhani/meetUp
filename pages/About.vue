@@ -3,6 +3,7 @@
 </template>
 
 <script lang="ts">
+import {defineComponent} from 'vue'
 useHead({
   title: 'MeetUp | About',
   meta: [
@@ -16,7 +17,6 @@ useHead({
     }
   ]
 })
-import {defineComponent} from 'vue'
 
 export default defineComponent({
   name: "About"

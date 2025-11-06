@@ -1,6 +1,6 @@
 export const useDarkMode = () => {
   const isDark = useState<boolean>('darkMode', () => {
-    if (process.client) {
+    if (import.meta.client) {
       // Check localStorage first
       const saved = localStorage.getItem('darkMode')
       if (saved !== null) {
@@ -14,7 +14,7 @@ export const useDarkMode = () => {
 
   const toggleDarkMode = () => {
     isDark.value = !isDark.value
-    if (process.client) {
+    if (import.meta.client) {
       localStorage.setItem('darkMode', String(isDark.value))
       updateDarkClass()
     }
@@ -22,14 +22,14 @@ export const useDarkMode = () => {
 
   const setDarkMode = (value: boolean) => {
     isDark.value = value
-    if (process.client) {
+    if (import.meta.client) {
       localStorage.setItem('darkMode', String(value))
       updateDarkClass()
     }
   }
 
   const updateDarkClass = () => {
-    if (process.client) {
+    if (import.meta.client) {
       if (isDark.value) {
         document.documentElement.classList.add('dark')
       } else {
@@ -39,7 +39,7 @@ export const useDarkMode = () => {
   }
 
   // Initialize dark mode on mount
-  if (process.client) {
+  if (import.meta.client) {
     updateDarkClass()
   }
 
