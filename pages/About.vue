@@ -1,7 +1,5 @@
 <template>
-    <Header/>
     <AboutView/>
-    <Footer/>
 </template>
 
 <script lang="ts">

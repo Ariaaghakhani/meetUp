@@ -1,7 +1,5 @@
-<template >
-    <Header/>
+<template>
     <HomeView/>
-    <Footer/>
 </template>
 
 <script lang="ts">
