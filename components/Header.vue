@@ -1,5 +1,6 @@
 <template>
   <header class="header-sticky">
+  <div class=" container mx-auto md:px-20">
     <div class="flex justify-between p-4 md:p-8 w-full mx-auto items-center font-danaReg">
     <div class="nav flex">
       <div class="logo me-4 ">
@@ -14,7 +15,7 @@
         </NuxtLink>
       </ul>
     </div>
-    <div class="flex items-center gap-2 hidden md:flex">
+    <div class="items-center gap-2 hidden md:flex">
       <Button
         :icon="isDark ? 'pi pi-sun' : 'pi pi-moon'"
         rounded
@@ -50,6 +51,7 @@
       </Drawer>
       <Button icon="pi pi-bars" outlined rounded @click="showMenu=true"/>
     </div>
+  </div>
   </div>
   </header>
 </template>

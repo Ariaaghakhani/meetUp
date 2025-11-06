@@ -1,5 +1,5 @@
 <template>
-<div class="w-full rounded-3xl bg-salt dark:bg-gray-800 mt-40 py-40">
+<div class="w-full rounded-3xl bg-salt dark:bg-gray-800 mt-12 py-20">
   <p class="text-center max-w-[500px] mx-auto text-prblue font-danaBold"> برگذار چطوری کار می‌کنه؟</p>
   <h2 class="text-center max-w-[500px] mx-auto text-4xl font-danaBold dark:text-white mt-4">خلق تجربه‌ی جذاب برای شما</h2>
   <p class="text-center max-w-[500px] mx-auto text-space dark:text-gray-300 font-danaReg mt-4">

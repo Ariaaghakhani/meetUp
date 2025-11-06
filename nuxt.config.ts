@@ -32,6 +32,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  components: true,
   app:{
     head:{
       title:'MeetUp',

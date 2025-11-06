@@ -8,7 +8,8 @@
           <strong class="text-prblue">برگذار</strong>
           بسپارید
         </h1>
-        <p class="font-danaReg text-space dark:text-gray-300">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+        <p class="font-danaReg text-space dark:text-gray-300">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+          و با استفاده از
           طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
         <div class="flex card w-full justify-center items-center font-danaReg gap-4 my-16">
           <NuxtLink to="/events">
@@ -21,10 +22,12 @@
       </div>
     </div>
   </div>
-  <Events/>
-  <How/>
-  <Why/>
-  <Testimonial/>
+  <div class="container mx-auto md:px-20">
+    <!--    <Events/>-->
+    <LazyHow hydrate-on-visible/>
+    <LazyWhy hydrate-on-visible/>
+  </div>
+  <LazyTestimonial hydrate-on-visible/>
 </template>
 
 <script lang="ts">

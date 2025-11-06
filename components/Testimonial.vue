@@ -51,7 +51,6 @@ export default defineComponent({
 <style scoped>
 .testimonial-card {
   background: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   border-radius: 10px;
   min-width: 300px;
@@ -62,7 +61,6 @@ export default defineComponent({
 }
 
 :global(.dark) .testimonial-card {
-  background: #1f2937;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  background: #1f2937 !important;
 }
 </style>

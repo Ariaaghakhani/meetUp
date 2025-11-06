@@ -111,7 +111,7 @@
       @page="onPageChange"
   />
 </template>
-<script lang="ts">
+<script>
 import {defineComponent} from 'vue'
 import SERVER from '~/SERVER'
 
