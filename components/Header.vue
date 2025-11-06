@@ -1,5 +1,6 @@
 <template>
-  <div class="flex justify-between p-4 md:p-8 w-full mx-auto items-center font-danaReg">
+  <header class="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-transparent dark:border-transparent shadow-sm">
+    <div class="flex justify-between p-4 md:p-8 w-full mx-auto items-center font-danaReg">
     <div class="nav flex">
       <div class="logo me-4 ">
         <img alt="logo" src="@/assets/images/logo.png">
@@ -50,6 +51,7 @@
       <Button icon="pi pi-bars" outlined rounded @click="showMenu=true"/>
     </div>
   </div>
+  </header>
 </template>
 
 <script lang="ts">
