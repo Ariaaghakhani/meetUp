@@ -43,7 +43,7 @@ export default defineNuxtConfig({
     pageTransition: false,
     layoutTransition: false
   },
-  modules:['@vite-pwa/nuxt','@primevue/nuxt-module'],
+  modules:['@vite-pwa/nuxt', '@primevue/nuxt-module', "@nuxt/eslint"],
   pwa: {
     manifest: {
       name: "MeetUp",
