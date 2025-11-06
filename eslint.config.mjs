@@ -9,7 +9,7 @@ export default withNuxt([
       'vue/no-mutating-props': 0,
       'vue/multi-word-component-names': 0,
       'vue/no-reserved-component-names': 0,
-      // TODO remove the next line when the project is completely migrated to nuxt3
+      'vue/attribute-hyphenation': 'off',
       'vue/v-on-event-hyphenation': 'off',
       'vue/require-explicit-emits': 'error',
       'vue/component-name-in-template-casing': [
