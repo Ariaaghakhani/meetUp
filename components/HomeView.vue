@@ -1,6 +1,5 @@
 <template>
-  <div
-      v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-20 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }">
+  <div>
     <div class="p-4 md:p-8 bg-landing bg-center bg-no-repeat bg-cover dark:bg-blend-darken dark:bg-gray-900/80">
       <div class="container mx-auto max-w-[500px] *:text-center">
         <div class="text-prblue font-danaBold text-2xl ">به برگذار خوش آمدید</div>
@@ -22,22 +21,10 @@
       </div>
     </div>
   </div>
-<!--  <div-->
-<!--      v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-20 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }">-->
-    <Events/>
-<!--  </div>-->
-  <div
-      v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-20 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }">
-    <How/>
-  </div>
-  <div
-      v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-20 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }">
-    <Why/>
-  </div>
-  <div
-      v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-b-20 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }">
-    <Testimonial/>
-  </div>
+  <Events/>
+  <How/>
+  <Why/>
+  <Testimonial/>
 </template>
 
 <script lang="ts">
