@@ -80,6 +80,10 @@ export default defineNuxtConfig({
     options: {
       theme: {
         preset: MyPreset,
+        options: {
+          darkModeSelector: '.dark',
+          cssLayer: false
+        },
         button:{
           primary:{
             background:"#4457ff"

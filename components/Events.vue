@@ -1,7 +1,7 @@
 <template>
   <div class="p-4 md:p-8 ">
-    <h2 class="font-danaBold text-4xl leading-normal">رویدادها</h2>
-    <div class="flex flex-wrap items-center mt-8 w-full border-b font-danaReg py-4">
+    <h2 class="font-danaBold text-4xl leading-normal dark:text-white">رویدادها</h2>
+    <div class="flex flex-wrap items-center mt-8 w-full border-b dark:border-gray-700 font-danaReg py-4">
       <div
           class="input-search-box w-full lg:w-1/4 lg:border-e px-4 mb-2 md:mb-4 border-b after:-bottom-0 lg:after:-bottom-4 lg:border-b-0 lg:mb-0">
         <IconField class="">
@@ -63,7 +63,7 @@
       <Skeleton border-radius="1.5rem" class="block lg:hidden" height="12.5rem"/>
     </div>
     <NuxtLink v-for="(item,index) in events" v-else :key="index" :to="`/event/${item.id}`"
-              class="card col-span-3 lg:col-span-1 border rounded-3xl flex flex-wrap overflow-hidden group h-[200px] lg:h-[500px] relative">
+              class="card col-span-3 lg:col-span-1 border dark:border-gray-700 dark:bg-gray-800 rounded-3xl flex flex-wrap overflow-hidden group h-[200px] lg:h-[500px] relative">
       <div class="absolute w-full top-0 right-0 p-4 flex z-50 font-danaReg">
         <div v-if="!item.type" class="rounded-full bg-white text-prblue px-4 py-2 flex items-center font-bold">
           <i class="pi pi-desktop me-2"></i>
@@ -91,12 +91,12 @@
           <span>
             <i class="pi pi-map-marker text-[1rem] text-prblue"></i>
           </span>
-            <span class="ms-2 text-space">{{ item.location }}</span>
+            <span class="ms-2 text-space dark:text-gray-300">{{ item.location }}</span>
           </div>
         </div>
         <div class="w-full p-4 flex-wrap">
-          <div class="w-full font-bold text-xl group-hover:text-prblue duration-300">{{ item.title }}</div>
-          <div class="text-space mt-4">{{ item.description }}</div>
+          <div class="w-full font-bold text-xl group-hover:text-prblue duration-300 dark:text-white">{{ item.title }}</div>
+          <div class="text-space dark:text-gray-400 mt-4">{{ item.description }}</div>
         </div>
       </div>
     </NuxtLink>

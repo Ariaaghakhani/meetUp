@@ -1,15 +1,15 @@
 <template>
-  <div class="bg-gray-100 py-10">
+  <div class="bg-gray-100 dark:bg-gray-900 py-10">
     <Vue3Marquee class="mt-8" :duration="300" :pause-on-hover="true" style="direction: ltr">
       <div v-for="(item, index) in quotes" :key="index" class="testimonial-card">
-        <p class="text-gray-700">{{ item.quote }}</p>
-        <p class="mt-2 text-sm text-gray-500">— {{ item.id }}</p>
+        <p class="text-gray-700 dark:text-gray-300">{{ item.quote }}</p>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">— {{ item.id }}</p>
       </div>
     </Vue3Marquee>
     <Vue3Marquee class="mt-8" direction="reverse" :duration="300" :pause-on-hover="true" style="direction: ltr">
       <div v-for="(item, index) in quotes" :key="index" class="testimonial-card">
-        <p class="text-gray-700">{{ item.quote }}</p>
-        <p class="mt-2 text-sm text-gray-500">— {{ item.id }}</p>
+        <p class="text-gray-700 dark:text-gray-300">{{ item.quote }}</p>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">— {{ item.id }}</p>
       </div>
     </Vue3Marquee>
   </div>
@@ -59,5 +59,10 @@ export default defineComponent({
   margin-right: 1rem;
   direction: rtl;
   height: 200px;
+}
+
+:global(.dark) .testimonial-card {
+  background: #1f2937;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 </style>

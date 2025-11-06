@@ -13,10 +13,24 @@
         </NuxtLink>
       </ul>
     </div>
-    <div class="flex justify-end hidden md:flex">
+    <div class="flex items-center gap-2 hidden md:flex">
+      <Button
+        :icon="isDark ? 'pi pi-sun' : 'pi pi-moon'"
+        rounded
+        text
+        @click="toggleDarkMode"
+        :title="isDark ? 'حالت روز' : 'حالت شب'"
+      />
       <Button icon="pi pi-user" label="پنل برگذار کننده" rounded/>
     </div>
-    <div class="md:hidden">
+    <div class="md:hidden flex items-center gap-2">
+      <Button
+        :icon="isDark ? 'pi pi-sun' : 'pi pi-moon'"
+        rounded
+        text
+        @click="toggleDarkMode"
+        :title="isDark ? 'حالت روز' : 'حالت شب'"
+      />
       <Drawer v-model:visible="showMenu" position="top" style="height: auto">
         <ul class="flex flex-wrap *:w-full *:border-b-2 *:flex *:items-center font-danaReg *:text-2xl *:p-4">
           <NuxtLink active-class="active-menu" to="/">
@@ -46,6 +60,14 @@ import Drawer from 'primevue/drawer';
 
 
 export default defineComponent({
+  setup() {
+    const { isDark, toggleDarkMode } = useDarkMode()
+
+    return {
+      isDark,
+      toggleDarkMode
+    }
+  },
   data(){
     return{
       showMenu:false,
