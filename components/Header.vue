@@ -92,16 +92,17 @@ export default defineComponent({
   left: 0 !important;
   right: 0 !important;
   z-index: 9999 !important;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   width: 100%;
 }
 
 :global(.dark) .header-sticky {
-  background-color: rgba(15, 23, 42, 0.85);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: rgba(15, 23, 42, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
 }
 </style>
