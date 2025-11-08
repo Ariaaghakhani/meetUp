@@ -1,5 +1,5 @@
 <template>
-  <header class="header-sticky">
+  <header class="fixed top-0 left-0 right-0 z-[9999] w-full bg-white/90 dark:bg-slate-900/95 backdrop-blur-md border-b border-black/[0.08] dark:border-white/10 shadow-sm dark:shadow-md">
     <div class="container mx-auto md:px-20">
       <div
         class="flex justify-between p-4 md:p-8 w-full mx-auto items-center font-danaReg"
@@ -84,25 +84,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style>
-.header-sticky {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  z-index: 9999 !important;
-  background-color: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  width: 100%;
-}
-
-:global(.dark) .header-sticky {
-  background-color: rgba(15, 23, 42, 0.95);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
-}
-</style>
