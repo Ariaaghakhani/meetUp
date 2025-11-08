@@ -1,5 +1,7 @@
 <template>
-  <header class="fixed top-0 left-0 right-0 z-[9999] w-full bg-white/90 dark:bg-slate-900/95 backdrop-blur-md border-b border-black/[0.08] dark:border-white/10 shadow-sm dark:shadow-md">
+  <header
+    class="fixed top-0 left-0 right-0 z-[9999] w-full bg-white/90 dark:bg-slate-900/95 backdrop-blur-md border-b border-black/[0.08] dark:border-white/10 shadow-sm dark:shadow-md"
+  >
     <div class="container mx-auto md:px-20">
       <div
         class="flex justify-between p-4 md:p-8 w-full mx-auto items-center font-danaReg"
@@ -64,14 +66,12 @@
   </header>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script>
 import 'primeicons/primeicons.css'
 
-export default defineComponent({
+export default {
   setup() {
     const { isDark, toggleDarkMode } = useDarkMode()
-
     return {
       isDark,
       toggleDarkMode,
@@ -82,5 +82,5 @@ export default defineComponent({
       showMenu: false,
     }
   },
-})
+}
 </script>
