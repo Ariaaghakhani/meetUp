@@ -1,5 +1,5 @@
 <template>
-
+  <Events/>
 </template>
 
 <script lang="ts">

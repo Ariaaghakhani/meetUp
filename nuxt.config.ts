@@ -32,10 +32,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  devServer:{
-    host:"0.0.0.0",
-    port:4000,
-  },
+  components: true,
   app:{
     head:{
       title:'MeetUp',
@@ -43,9 +40,10 @@ export default defineNuxtConfig({
         dir:"rtl"
       }
     },
-    // pageTransition: { name: 'rotate',mode:'out-in'},
+    pageTransition: false,
+    layoutTransition: false
   },
-  modules:['@vite-pwa/nuxt','@primevue/nuxt-module'],
+  modules:['@vite-pwa/nuxt', '@primevue/nuxt-module', "@nuxt/eslint"],
   pwa: {
     manifest: {
       name: "MeetUp",
@@ -80,6 +78,10 @@ export default defineNuxtConfig({
     options: {
       theme: {
         preset: MyPreset,
+        options: {
+          darkModeSelector: '.dark',
+          cssLayer: false
+        },
         button:{
           primary:{
             background:"#4457ff"

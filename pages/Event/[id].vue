@@ -1,18 +1,13 @@
 <template>
-  <Header/>
-  {{ this.$route.params.id }}
-  <Footer/>
+  <div>{{ $route.params.id }}</div>
 </template>
 
 <script lang="ts">
-import {defineComponent} from 'vue'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: "[id].vue"
+  name: 'EventDetail',
 })
 </script>
 
-
-<style scoped>
-
-</style>
+<style scoped></style>
