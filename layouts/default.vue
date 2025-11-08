@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col">
     <Header />
-    <main class="flex-1" style="padding-top: 100px;">
+    <main class="flex-1" style="padding-top: 100px">
       <slot />
     </main>
     <Footer />
@@ -12,10 +12,6 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'DefaultLayout'
+  name: 'DefaultLayout',
 })
 </script>
-
-<style scoped>
-
-</style>
